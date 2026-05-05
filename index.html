@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Life Expectancy Choropleth, 1975–2024 — Nonlinear Contrast</title>
+  <title>Life Expectancy by Country, 1975–2024</title>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <style>
     :root { --bg:#fbfafb; --panel:#ffffff; --text:#1f2937; --muted:#6b7280; --border:#e5e7eb; }
@@ -173,7 +173,7 @@ function buildPlot(data) {
       yanchor: "top",
       pad: { t: 50, r: 10 },
       buttons: [
-        { label: "Play", method: "animate", args: [null, { fromcurrent: true, frame: { duration: 320, redraw: true }, transition: { duration: 160 } }] },
+        { label: "Play", method: "animate", args: [null, { fromcurrent: true, frame: { duration: 160, redraw: true }, transition: { duration: 80 } }] },
         { label: "Pause", method: "animate", args: [[null], { mode: "immediate", frame: { duration: 0, redraw: false }, transition: { duration: 0 } }] }
       ]
     }],
